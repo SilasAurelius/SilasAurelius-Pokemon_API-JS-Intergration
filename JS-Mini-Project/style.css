@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.navbar {
+  background-color: #343a40;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: white !important;
+}
+
+#banner {
+  font-size: 2rem;
+  color: black; 
+  background-color: rgba(255, 0, 0, 0.815);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.carousel-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-item {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.carousel-item.active {
+  opacity: 1;
+  z-index: 2;
+  transition: opacity 2s ease-in-out;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.carousel-caption h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background: url('pictures/bg-img.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-section {
+  flex: 1;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #f8f9fa;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  position: relative;
+  margin-top: auto;
+  flex-shrink: 0;
+}
+
+.footer a {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+input[type="text"] {
+  border: 2px solid #dc3545;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+button {
+  background-color: #dc3545;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #b52b3a;
+}
